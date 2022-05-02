@@ -149,4 +149,3 @@ public class OrdemServico {
         return "ID: " + idOrdemServico + "\nNome Cliente: " + cliente + "\nNome Técnico Responsável: " + tecnicoResponsavel + "\nDataHora: " + dataHora + "\nDataEntrega: " + dataEntrega + "\nGarantia: " + garantia + "\nObservação: " + observacao + "\nValor Total: " + valorTotal + "\nMão de Obra: " + maoObra + "\n Itens de Servico: " + itensServico;
     }
 }
-

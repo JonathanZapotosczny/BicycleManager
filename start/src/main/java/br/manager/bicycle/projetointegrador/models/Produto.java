@@ -54,4 +54,3 @@ public class Produto {
         return nome + "\nID: " + idProduto + "\nDescricao: " + descricao + "\nValor R$: " + valor;
     }
 }
-

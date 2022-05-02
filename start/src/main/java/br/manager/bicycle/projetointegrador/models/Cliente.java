@@ -64,4 +64,3 @@ public class Cliente {
         return nome + "\nID: " + idCliente + "\nE-mail: " + email + "\nCPF: " + cpf + "\nTelefone: " + telefone;
     }
 }
-

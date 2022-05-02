@@ -76,4 +76,3 @@ public class Funcionario {
         return nome + "\nID: " + idFuncionario + "\nE-mail: " + email + "\nCPF: " + cpf + "\nTelefone: " + telefone + "\nDataAdmissão: " + dataAdmissao;
     }
 }
-
