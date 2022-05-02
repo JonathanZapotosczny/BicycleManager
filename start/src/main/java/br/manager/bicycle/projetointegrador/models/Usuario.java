@@ -32,4 +32,3 @@ public class Usuario {
         return senha;
     }
 }
-
