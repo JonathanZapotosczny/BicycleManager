@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.manager.bicycle.projetointegrador.screens.RealizaOrdemServico">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="576.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/carrinho.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tfDataHora" layoutX="501.0" layoutY="188.0" prefHeight="25.0" prefWidth="150.0" styleClass="textfield-text" />
+            <Label layoutX="181.0" layoutY="171.0" text="Cliente*" />
+            <Button fx:id="btIniciaOrdem" layoutX="661.0" layoutY="191.0" mnemonicParsing="false" onAction="#iniciarOrdem" prefHeight="25.0" prefWidth="100.0" styleClass="button-registrar" text="INICIAR" />
+            <ComboBox fx:id="cbFuncionario" layoutX="341.0" layoutY="188.0" prefHeight="25.0" prefWidth="150.0" />
+            <ComboBox fx:id="cbProdutos" layoutX="181.0" layoutY="300.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="tfGarantia" layoutX="181.0" layoutY="244.0" prefHeight="25.0" prefWidth="150.0" styleClass="textfield-text" />
+            <DatePicker fx:id="dpDataEntrega" layoutX="341.0" layoutY="244.0" prefHeight="25.0" prefWidth="150.0" styleClass="textfield-text" />
+            <ComboBox fx:id="cbCliente" layoutX="181.0" layoutY="188.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="tfQuantidade" layoutX="341.0" layoutY="300.0" prefHeight="25.0" prefWidth="100.0" styleClass="textfield-text" />
+            <TextField fx:id="tfObservacao" layoutX="501.0" layoutY="244.0" prefHeight="31.0" prefWidth="260.0" styleClass="textfield-text" />
+            <Button fx:id="btFinalizaOrdem" layoutX="181.0" layoutY="669.0" mnemonicParsing="false" onAction="#finalizarOrdem" prefHeight="25.0" prefWidth="100.0" styleClass="button-registrar" text="FINALIZAR" />
+            <Button fx:id="btAdicionaProduto" layoutX="451.0" layoutY="303.0" mnemonicParsing="false" onAction="#adicionarItem" prefHeight="25.0" prefWidth="100.0" styleClass="button-registrar" text="ADICIONAR" />
+            <TableView fx:id="tbItensServico" layoutX="181.0" layoutY="335.0" prefHeight="324.0" prefWidth="919.0">
+              <columns>
+                <TableColumn fx:id="tbcProduto" text="Produto" />
+               <TableColumn fx:id="tbcValorUnitario" text="Valor Un. R$" />
+               <TableColumn fx:id="tbcQuantidade" text="Quantidade" />
+               <TableColumn fx:id="tbcSubTotal" text="Sub. Total R$" />
+              </columns>
+            </TableView>
+            <Label layoutX="341.0" layoutY="171.0" text="Técnico Responsável*" />
+            <Label layoutX="501.0" layoutY="171.0" text="Data l Hora*" />
+            <Label layoutX="181.0" layoutY="227.0" text="Garantia*" />
+            <Label layoutX="341.0" layoutY="227.0" text="Data de Entrega*" />
+            <Label layoutX="501.0" layoutY="227.0" text="Observação*" />
+            <Label layoutX="181.0" layoutY="281.0" text="Produtos*" />
+            <Label layoutX="341.0" layoutY="281.0" text="Quantidade*" />
+            <Label layoutX="976.0" layoutY="281.0" text="Mão de Obra R$*" />
+            <TextField fx:id="tfMaoObra" layoutX="950.0" layoutY="300.0" prefHeight="25.0" prefWidth="150.0" styleClass="textfield-text" />
+            <TextField fx:id="tfTotalItens" layoutX="994.0" layoutY="666.0" prefHeight="31.0" prefWidth="106.0" styleClass="textfield-text" />
+            <Label layoutX="880.0" layoutY="673.0" text="TOTAL PARCIAL R$" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

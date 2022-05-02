@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.manager.bicycle.projetointegrador.screens.CadastroFuncionario">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Label layoutX="630.0" layoutY="171.0" text="CPF" />
+            <TextField fx:id="tfCpf" layoutX="490.0" layoutY="200.0" prefHeight="25.0" prefWidth="300.0" promptText="111.222.333-55" styleClass="textfield-text" />
+            <Label layoutX="624.0" layoutY="237.0" text="Nome" />
+            <TextField fx:id="tfNome" layoutX="490.0" layoutY="266.0" prefHeight="25.0" prefWidth="300.0" promptText="Jonathan Castro" styleClass="textfield-text" />
+            <Label layoutX="623.0" layoutY="303.0" text="E-mail" />
+            <TextField fx:id="tfEmail" layoutX="490.0" layoutY="332.0" prefHeight="25.0" prefWidth="300.0" promptText="JonathanCastro@teste.com" styleClass="textfield-text" />
+            <Label layoutX="617.0" layoutY="369.0" text="Telefone" />
+            <TextField fx:id="tfTelefone" layoutX="490.0" layoutY="398.0" prefHeight="25.0" prefWidth="300.0" promptText="(41) 9 1234-5678" styleClass="textfield-text" />
+            <Button fx:id="btCadastrar" layoutX="490.0" layoutY="514.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="25.0" prefWidth="100.0" styleClass="button-registrar" text="CADASTRAR" />
+            <Button fx:id="btLimpar" layoutX="595.0" layoutY="514.0" mnemonicParsing="false" onAction="#limpar" prefHeight="25.0" prefWidth="100.0" styleClass="button-limpar" text="LIMPAR" />
+            <Label layoutX="589.0" layoutY="439.0" text="Data de Admissão" />
+            <DatePicker fx:id="datePickerDataAdmissao" layoutX="490.0" layoutY="468.0" prefHeight="25.0" prefWidth="300.0" promptText="12/03/2022" styleClass="textfield-text" />
+            <Label layoutX="499.0" layoutY="121.0" text="CADASTRO DE FUNCIONÁRIO">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="600.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/caixa-de-selecao.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

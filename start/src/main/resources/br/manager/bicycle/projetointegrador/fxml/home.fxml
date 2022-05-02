@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" prefHeight="800" prefWidth="400" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.manager.bicycle.projetointegrador.screens.Home">
+   <left>
+      <VBox prefHeight="800.0" prefWidth="269.0" spacing="5.0" style="-fx-background-color: #282828;" styleClass="background-home">
+         <padding>
+            <Insets topRightBottomLeft="8.0" />
+         </padding>
+         <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../img/bicycle2.png" />
+            </image>
+            <VBox.margin>
+               <Insets left="90.0" />
+            </VBox.margin>
+         </ImageView>
+         <Button onAction="#loadHome" prefHeight="40.0" prefWidth="254.0" styleClass="button-home" text="HOME">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets></Button>
+         <Button onAction="#loadCadastroCliente" prefHeight="40.0" prefWidth="254.0" styleClass="button-home" text="CADASTRAR CLIENTE" />
+         <Button onAction="#loadCadastroFuncionario" prefHeight="40.0" prefWidth="254.0" styleClass="button-home" text="CADASTRAR FUNCIONÁRIO" />
+         <Button onAction="#loadCadastroProduto" prefHeight="40.0" prefWidth="254.0" styleClass="button-home" text="CADASTRAR PRODUTO" />
+         <Button onAction="#loadCadastroOrdem" prefHeight="40.0" prefWidth="254.0" styleClass="button-home" text="CADASTRAR ORDEM DE SERVIÇO" />
+         <Button onAction="#loadOrdemServicoAtivo" prefHeight="40.0" prefWidth="254.0" styleClass="button-home" text="SERVIÇOS ATIVOS" />
+         <Button onAction="#loadListas" prefHeight="40.0" prefWidth="254.0" styleClass="button-home" text="LISTAS" />
+         <Button onAction="#logout" prefHeight="40.0" prefWidth="254.0" styleClass="button-sair" text="SAIR">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin></Button>
+      </VBox>
+   </left>
+   <center>
+
+      <StackPane fx:id="painelCentral" styleClass="background-home">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="390.0" layoutY="-65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bicycle.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="294.0" layoutY="365.0" text="Bicycle Manager">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
+      </StackPane>
+   </center>
+</BorderPane>
