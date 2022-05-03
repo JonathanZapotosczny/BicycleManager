@@ -40,4 +40,4 @@
 
 <h2 align="center">📽️ Vídeo sobre o Software 📽️</h2>
 
-[<img src="https://img.shields.io/badge/Clique aqui para acessar o vídeo do software-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" title = "Clique aqui para acessar o vídeo do software">](https://youtu.be/X_Sk4y68B2k)
+[<img src="https://img.shields.io/badge/Clique aqui para acessar o vídeo do software-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" title = "Clique aqui para acessar o vídeo do software">](https://youtu.be/7X3a_L2tEgo)
